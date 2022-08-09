@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome REGISTER</title>
+    <link href="css/register.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="form-div">
+    <div class="reg-content">
+        <h1>REGISTER</h1>
+        <span>HAVE ACCOUNT？</span> <a href="login.html">LOG IN</a>
+    </div>
+    <form id="reg-form" action="/Request_Servlet_demo/registerServlet" method="post">
+
+        <table>
+
+            <tr>
+                <td>username</td>
+                <td class="inputs">
+                    <input name="username" type="text" id="username">
+                    <br>
+                    <span id="username_err" class="err_msg" style="display: none">No Popular Form</span>
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>Password</td>
+                <td class="inputs">
+                    <input name="password" type="password" id="password">
+                    <br>
+                    <span id="password_err" class="err_msg" style="display: none">Wrong password Form</span>
+                </td>
+            </tr>
+
+
+        </table>
+
+        <div class="buttons">
+            <input value="Register" type="submit" id="reg_btn">
+        </div>
+        <br class="clear">
+    </form>
+
+</div>
+</body>
+</html>
